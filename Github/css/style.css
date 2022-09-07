@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.logo{
+    color: white;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.logo h1{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu{
+    margin-left: 850px;
+
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+
+.menu li:hover{
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.menu p{
+    color: white;
+    margin-left: 10px;
+}
+
+.content{
+    margin: 0px 0px;
+    width: 1136px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.content h1{
+    margin-bottom: 20px;
+}
+
+.content span{
+    color: red;
+}
+
+.content li{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.tutorial, li{
+    width: 900px;
+    font-size: 18px;
+}
+
+.tutorial img{
+    width: 900px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.widget{
+    padding: 0px 10px;
+    color: white;
+}
+
+.widget p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    color: greenyellow;
+    width: 150px;
+}
+
+.widget input{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+}
