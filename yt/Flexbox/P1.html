@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1-Flexbox</title>
+    <link rel="stylesheet" href="css/p1.css">
+</head>
+<body>
+    <h1>P1 - Flexbox</h1>
+    <h2>#Penggunaan Displey-Flex</h2>
+    <div class="container">
+        <div class="satu">1</div>
+        <div class="dua">2</div>
+        <div class="tiga">3</div>
+        <div class="empat">4</div>
+        <div class="empat">5</div>
+        <div class="empat">6</div>
+        <div class="empat">7</div>
+        <div class="empat">8</div>
+        
+    </div>
+    <div class="keterangan">
+        <p>diatas adalah contoh penerapan pengguaan <span>Display Flex</span>
+           . dan display flex mempunyai fitur yang bernama <span>flex-decoration</span><br>
+           1. row <br>
+           2. row-reverse <br>
+           3. column <br>
+           4. column-reverse <br><br>
+           Berikut Adalah Contoh Masing-Masing Kegunaannya :
+        </p> <br>
+        <div class="contoh">
+            <p style="font-weight: bold;">#Row</p>
+            <p>Row di mula dari kiri ke kanan</p>
+            <img src="gambar/2022-05-01_05h44_27.png" alt="">
+        </div>
+        <div class="contoh">
+            <p style="font-weight: bold;">#Row-Reverse</p>
+            <p>Row di mula dari kanan ke kiri</p>
+            <img src="gambar/2022-05-01_06h22_44.png" alt="">
+        </div>
+        <div class="contoh">
+            <p style="font-weight: bold;">#Column</p>
+            <p>Column di mula dari Atas ke bawah</p>
+            <img src="gambar/2022-05-01_06h26_03.png" alt="">
+        </div>
+        <div class="contoh">
+            <p style="font-weight: bold;">#Column-Reverse</p>
+            <p>Column di mula dari bawah ke Atas</p>
+            <img src="gambar/2022-05-01_06h26_24.png" alt="">
+        </div><br><br>
+
+        <h2>Penggunaan Flex-wrap</h2>
+        <div class="flex-wrap">
+            <p>Flex wrap adalah kondisi di mana jika item 
+            baru di tambahkan item itu tidak memaksakan umtuk muat di
+            dalam container. <br>
+            Keterangan :
+            <span> Sifat Flex adalah Mengusahakan/memaksa selalu
+                    muat (kesamping) pada kontainernya</span> 
+            </p><br>
+            <img src="gambar/2022-05-01_07h24_52.png" alt="">
+            <p>coba kalian lihat kotak item yang awalnya 4 
+            sekarang ditambah kan 2 item Menjadi 6. maka hasilnya seperti di atas</p><br>
+
+            <p style="font-weight: bold;">#Flex-Wrap</p>
+            <img src="gambar/2022-05-01_07h29_03.png" alt="">
+            <p style="font-weight: bold;">#Flex-Wrap Reverse</p>
+            <img src="gambar/2022-05-01_07h29_18.png" alt="">
+        </div><br><br>
+
+        <div class="justify-content">
+            <h2>Penggunaan Justify-Content</h2>
+            <p><span>Justify-Content</span> Memiliki 6 effek yang bisa di pakai</p><br>
+            
+            <label>#Flex-start</label>
+            <p>Flex-start berperilaku sebagai default bisa di lihat seperti gambar di bawah ini</p>
+            <img src="gambar/2022-05-01_13h09_49.png" alt="">
+
+            <label>#Flex-end</label>
+            <p>Flex-end berperilaku sebagai kebalikan <span>Flex-Start </span>yaitu munculnya di Akhir</p>
+            <img src="gambar/2022-05-01_13h18_55.png" alt="">
+
+            <label>#Center</label>
+            <p>Center berperilaku Menegahkan semua Item</p>
+            <img src="gambar/2022-05-01_13h21_45.png" alt="">
+
+            <label>#Space-between</label>
+            <p>Space-between adalah gabung dari beberapa effect di atas. berperilaku :
+                item pojok kanan dan kiri akan memojok ke strart dan end sedang yang tengan berada di center
+            </p>
+            <img src="gambar/2022-05-01_13h26_53.png" alt="">
+
+            <label>#Space-around</label>
+            <p>Space-around adalah gabung dari beberapa effect di atas. berperilaku :
+                item kanan dan kiri mempunyai padding di sisi kanan dan kirinya begitu juga item
+                yang tengah sehingga terjadi penumpukan pading 2x margin di samping item tengah
+            </p>
+            <img src="gambar/2022-05-01_13h30_12.png" alt="">
+
+            <label>#Space-evenly</label>
+            <p>berperilaku hampir sama dengan <span>Space-around</span>
+                namun bedanya effek ini tidak terjadi penumpukan pading di item tengah
+            </p>
+            <img src="gambar/2022-05-01_13h37_07.png" alt="">
+        </div><br><br>
+
+
+
+        <div class="align-content">
+            <h2>Penggunaan align-content</h2>
+            <p>align-content bisa di gunakan jika itemnya lebih dari satu baris.
+                dan mempunyai 6 effect
+            </p><br>
+
+            <label>#flex-start</label>
+            <p>berperilaku : Semua Content berada pada posisi Start di sebelah kiri</p>
+            <img src="gambar/2022-05-01_13h50_43.png" alt="">
+
+            <label>#flex-end</label>
+            <p>berperilaku : Semua Content berada pada posisi end atau akhir</p>
+            <img src="gambar/2022-05-01_13h56_13.png" alt="">
+
+            <label>#center</label>
+            <p>berperilaku : Semua Content berada pada posisi tengah</p>
+            <img src="gambar/2022-05-01_14h00_01.png" alt="">
+
+            <label>#stretch</label>
+            <p>berperilaku : Content yang atas dengan bawahya mempunyai padding</p>
+            <img src="gambar/2022-05-01_14h01_53.png" alt="">
+
+            <label>#space-beetwen</label>
+            <p>berperilaku : setiap item mempunyai pading dan pading yang berada di tengah terjadi
+                penumpukan pading 2x
+            </p>
+            <img src="gambar/2022-05-01_14h06_20.png" alt="">
+
+            <label>#space-around</label>
+            <p>berperilaku : setiap item mempunyai padding</p>
+            <img src="gambar/2022-05-01_14h10_51.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

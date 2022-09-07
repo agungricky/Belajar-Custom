@@ -1,0 +1,16 @@
+.jumbotron{
+    background-image: url(/gambar/_GPE0520.JPG);
+    background-size: cover;
+    height: 750px;
+    text-align: center;
+    margin-top: -60px;
+}
+
+.jumbotron .display-4{
+    color: #ffffff;
+    padding-top: 90px;
+}
+
+span{
+    font-weight: bold;
+}

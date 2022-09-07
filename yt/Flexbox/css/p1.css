@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Contoh 1 */
+.container{
+    margin: 20px 10px;
+    width: 400px;
+    height: 250px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.container div{
+    width: 100px;
+    height: 93px;
+    background-color: green;
+    margin: 2px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.keterangan{
+    width: 400px;
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+.keterangan span{
+    color: blue;
+}
+
+/* justify-content */
+.justify-content label, .align-content label{
+    font-weight: bold;
+}

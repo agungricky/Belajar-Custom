@@ -1,0 +1,14 @@
+td{
+    text-align: center;
+    font-size: 31px;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+li{
+     font-size: 20px;
+     color: black;
+     text-align: left;
+     font-style: normal;
+     font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan bootstrap L1</title>
+    <meta name="viewport" content="device-width, initial-scale=1" >
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/L1.css">
+</head>
+
+<body>
+    <div class="pembungkus">
+        <h1>L1 - Container & Grid</h1>
+        <p>disini kita sudah memnggunakan bootstrap.di pertumuan kali ini
+            kita membahas tengtang <span> container </span>dan <span>Grid</span><br><br>
+
+            <h2>#Container</h2>
+            <p>Container ada 2 Jenis yaitu : <br>
+                - <span>container</span> <br>
+                - <span>container-fluid</span>
+            </p>
+        </p>
+
+        <div class="container">
+               <center>
+                Contoh container <br>
+                container Memiliki sifat tidak penuh tapi iya mendukung sifat <span>RESPONSIF</span>
+                </center> 
+        </div>
+
+        <div class="container-fluid">
+            <center>Contoh container - fluid <br>
+                container-fluid Memiliki sifat penuh iya tidak mendukung sifat <span>RESPONSIF</span>
+            </center>
+        </div>       
+    </div>
+
+    <!-- Grid -->
+    <div class="Grid">
+        <h2>#Grid</h2>
+        <p> <span>*</span> dimaksudkan Angka</p>
+        <img src="gambar/2022-05-14_06h38_49.png" alt="">
+
+        <p>di bawah ini Adalah beberapa contoh penggunaan GRID
+            di dalam botstap. grid ini sudah di dukug degan sistem
+            <span>Responsiv</span>. <br>
+            <span>Cara Penulisan </span>: Harus menggunakan Class Row kenapa?
+            Grid bootstrap di susun berdasarkan flex, Class row berguna
+            agar komponen bisa di buat menyamping. seperti gambar di bawah ini. <br>
+            pada umumnya grid bisa di jejer sebanyak 12 kotak
+        </p>
+        <div class="row">
+            <div class="col-2" style="background-color: brown;">col - *</div>
+            <div class="col-sm-2" style="background-color: black;">col-sm-*</div>
+            <div class="col-md-2" style="background-color: darkgreen;">col-md-*</div>
+            <div class="col-lg-2" style="background-color: yellowgreen;">col-gl-*</div>
+            <div class="col-xl-2" style="background-color: slategrey;">col-xl-*</div>
+            <div class="col" style="background-color: skyblue;">col = Induk dari semua (Otomatis)</div>
+            
+        </div>
+    </div>
+    
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

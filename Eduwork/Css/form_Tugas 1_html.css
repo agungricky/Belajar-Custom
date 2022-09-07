@@ -1,0 +1,51 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    margin: 10px 30px;
+    margin-left: 500px;
+}
+
+#Bacground{
+    width: 70%;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+#Bacground img{
+    padding-top: 20px;
+    height: 100px;
+}
+
+td{
+    margin-right: 10px;
+}
+
+.table{
+    margin-left: 250px;
+}
+
+.table #K1{
+    text-align: justify;
+}
+
+.table #K2{
+    text-align: left;
+    border-radius: 90px;
+}
+
+button{
+    width: 200px; 
+    height: 80px; 
+    border-radius: 30px; 
+    background-color: red; 
+    color: wheat; 
+    box-shadow: inset 5px 5px 5px black;
+}
+
+.submit :hover{
+    background-color: green;
+}

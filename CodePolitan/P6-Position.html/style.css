@@ -1,0 +1,62 @@
+table{
+    border-collapse: collapse;
+    margin-left: 80px;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+th{
+    background-color: darkgoldenrod;
+    font-weight: bold;
+}
+
+div{
+    width: 100px;
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Satu{
+    background-color: aquamarine;
+    float: left;
+}
+
+#Dua{
+    background-color: cadetblue;
+    float: left;
+}
+
+#Tiga{
+    background-color: cornflowerblue;
+    float: left; 
+}
+
+#Empat{
+    background-color: cyan;
+    float: left;
+}
+
+#satu{
+    background-color: aquamarine;
+    float: left;
+}
+
+#dua{
+    background-color: cadetblue;
+    float: left;
+}
+
+#tiga{
+    background-color: cornflowerblue;
+    float: left;
+    position: relative;
+}
+
+#empat{
+    background-color: cyan;
+    float: left;
+    
+}

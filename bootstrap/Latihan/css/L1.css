@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.pembungkus{
+    margin: 20px;
+}
+
+.pembungkus p{
+    width: 600px;
+    text-align: justify;
+}
+
+.pembungkus span{
+    color: blue;
+}
+
+
+.container{
+    background-color: chartreuse;
+    height: 200px;
+}
+
+.container center{
+    padding: 70px 0px;
+}
+
+.container-fluid{
+    margin: 10px 0px;
+    background-color: rgb(120, 112, 110);
+    height: 200px;
+    padding: 80px 500px;
+    color: white;
+}
+
+.container-xl{
+    background-color: blueviolet;
+}
+
+/* Grid */
+
+.Grid{
+    margin: 100px 20px;
+}
+
+.Grid span{
+    color: red;
+}
+
+.Grid p{
+    width: 900px;
+    text-align: justify;
+}
+
+.row{
+    color: white;
+}
+
+.Grid img{
+    width: 600px;
+}

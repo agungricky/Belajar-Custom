@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 750px;
+    background-color: blue;
+    text-align: justify;
+}
+
+.container p{
+    color: aliceblue;
+    font-size: 21px;
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+}
+
+#petunjuk{
+    width: 250px;
+    border: 1px solid black;
+}
+
+#contoh{
+    width: 250px;
+    border: 1px solid black;
+    padding: 0px 10px;
+}
+
+#contoh ul li{
+    list-style: none;
+}
+
+.content #kuning{
+    color: yellow;
+}
+
+.content #putih{
+    color: white;
+}
+
+span{
+    color: red;
+}
+
+h1{
+    margin: 10px 450px;
+}

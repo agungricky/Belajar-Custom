@@ -1,0 +1,38 @@
+h1{
+    color: darkblue;
+    background-color: darkorange;
+}
+
+p{
+    color: blueviolet;
+    font-size: 21px;
+}
+
+th{
+    background-color: black;
+    color: white;
+    border: greenyellow;
+    text-align: center;
+    
+}
+
+tr{
+    border: black;
+    font-size: 19px;
+    font-family: serif;
+}
+
+td{
+    text-align: center;
+}
+
+table{
+    background-color:wheat;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:hover{background-color: aliceblue;}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}

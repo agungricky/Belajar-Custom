@@ -1,0 +1,29 @@
+#fungction{
+    background-color: black;
+    width: 800px;
+    color: white;
+}
+
+#fungction p{
+    padding: 20px;
+}
+
+span{
+    color: greenyellow;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    margin: 0px 20px;
+    box-shadow: 5px 1px 15px;
+}
+
+#Text{
+    background-color: white;
+    width: 20%;
+    color: black;
+    margin: 20px;
+    font-weight: bold;
+}

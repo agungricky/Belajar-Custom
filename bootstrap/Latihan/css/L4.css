@@ -1,0 +1,56 @@
+/* Navbar */
+
+.navbar-nav a{
+    margin: 0px 15px;
+}
+
+.login{
+   display: flex;
+   margin-left: 400px;
+}
+
+.login .btn{
+    background-color: rgb(51, 51, 242);
+    color: white;
+}
+
+/* Akhir navbar */
+
+/* Jumbotron */
+.jumbotron{
+    text-align: center;
+    margin: 30px auto;
+    padding: 100px 0px;
+    background-color: rgb(202, 203, 204);
+}
+
+.jumbotron span{
+    font-size: 30px;
+}
+
+.jumbotron h1{
+    font-size: 50px;
+}
+
+.jumbotron p{
+    font-size: 30px;
+    color: rgb(99, 99, 99);
+}
+
+.jumbotron .btn{
+    background-color: rgb(51, 51, 242);
+    color: white;
+    margin: 30px 0px;
+}
+/* Akhir Jumbotron */
+
+
+/* COntent */
+#Content .container{
+    display: flex;
+}
+
+#Content .card{
+    margin: 10px;
+}
+/* COntent */

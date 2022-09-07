@@ -1,0 +1,40 @@
+#kotak1{ background-color: aqua;}
+#kotak2{ background-color: yellow;}
+#kotak3{ background-color: blueviolet;}
+#kotak4{ background-color: violet;}
+#kotak5{ background-color: chartreuse}
+.inline, .inline-blok, .blox, .none{ margin-bottom: 30px; }
+span{ color: red;}
+
+
+.inline div{
+    display: inline;
+    margin: auto 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.inline-blok div{
+    display: inline-block;
+    margin: auto 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.blox div{
+    display: block;
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.none div{
+    display: none;
+    margin: auto 5px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}

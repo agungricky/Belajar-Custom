@@ -1,0 +1,46 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    width: 800px;
+    margin: 120px auto;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+    padding: 0px 30px;
+}
+
+hr{
+    width: 55px;
+    height: 4px;
+    border: none;
+    background-color: yellow;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+p{
+    width: 600px;
+    text-align: justify;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: yellow;
+    border: none;
+    width: 90px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}

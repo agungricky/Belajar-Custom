@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1, p{
+    margin: 10px 20px;
+    width: 600px;
+}
+
+.container{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.container div{
+    width: 90px;
+    height: 70px;
+    background-color: aquamarine;
+    margin: 0px 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.satu{ flex: 1;  }
+.dua{ flex: 2   }
+.tiga{ flex: 4;  }
+.empat{ order: 3; }
+.lima{ order: 1;  }
+.enam{ order: 6;  }
+
+span{
+    color: red;
+}

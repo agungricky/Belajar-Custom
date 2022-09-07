@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Dropdown Tanpa ul li*/
+
+.button{
+    width: 80px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    margin: 20px 0px 1px 20px;
+}
+
+.dropdown{
+    display: inline-block;
+    margin: 20px;
+}
+
+.dropdown:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    margin-left: 20px;
+    display: none;
+    position: absolute;
+}
+
+.submenu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.submenu a:hover{
+    background-color: green;
+}

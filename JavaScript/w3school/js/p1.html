@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meggunakan fungsi Date</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section id="p1" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Menggunakan Fungsi Date();</h5>
+        <p class="card-text">Tanggal berapakah hari ini ?</p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="date()">Button</button>
+        </div>
+
+        <span id="tampil" style="color: red;"></span>
+      </div>
+    </div>
+
+    <script>
+      function date() {
+        document.getElementById('tampil').innerHTML = Date();
+      }
+    </script>
+  </section> 
+
+  <section id="p2" class="text-center">
+    <div class="card w-75 m-auto mt-3" id="bg">
+      <div class="card-body">
+        <h5 class="card-title" id="judul">Mengubah Bohlam</h5>
+        <button onclick="mati()">Mati</button>
+        <img src="image/mati.gif" alt="gambar tidak tampil" id="bohlam">
+        <button onclick="nyala()">Nyala</button>
+
+      </div>
+      <script>
+        function nyala() {
+          document.getElementById('bg').style.backgroundColor = "#2C3333"
+          document.getElementById('bohlam').src = 'image/nyala.gif'
+          document.getElementById('judul').style.color = "white"
+        }
+
+        function mati() {
+          document.getElementById('bohlam').src = 'image/mati.gif'
+          document.getElementById('bg').style.backgroundColor = "white"
+          document.getElementById('judul').style.color = "black"
+        }
+      </script>
+    </div>
+
+  </section>
+
+  <section id="p3" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Jenis - Jenis Console</h5>
+        <p class="card-text">Cosole di bagi menjadi 3 <br>
+          <span style="color: red;">
+            - Console.info <br>
+            - Console.warn <br>
+            - Console.error
+          </span>
+        </p>
+      </div> 
+
+      <script>
+        console.info("console.info")
+        console.warn("console.warn");
+        console.error("console.error")
+
+      </script>
+  </section>
+
+  <section id="p4" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">String Tamplate</h5>
+        <p>String Tamplate Adalah Pengganti operator + penggabung variabel, bisa kalian lihat perbedann 2 gambar ini
+          dengan hasil yang sama</p>
+        <div class="img" style="display: flex;">
+          <img src="image/2022-07-23_13h31_39.png" alt="" id="img">
+          <img src="image/2022-07-23_13h33_37.png" alt="" id="img">
+        </div>
+        <p class="card-text" id="text"></p><br>
+
+      </div>
+    </div>
+
+    <style>
+      @media screen and (min-width: 300px) {
+        .img {
+          flex-wrap: wrap;
+        }
+      }
+
+      #img {
+        margin: 10px;
+        width: 450px;
+      }
+    </style>
+    <script>
+      var nama_depan = "Ricky";
+      var nama_tengah = "Agung";
+      var nama_blakang = "sumiranto";
+      var nama_lengkap = ` ${nama_depan} ${nama_tengah} ${nama_blakang}`;
+
+      document.getElementById('text').innerHTML = nama_lengkap;
+    </script>
+  </section>
+
+  <section id="p5" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Konversi String & Number</h5>
+        <p class="card-text">
+        <table class="table table-primary table-striped-columns">
+          <thead>
+            <th>No</th>
+            <th>function</th>
+            <th>Jenis masukan</th>
+            <th>Penjelasan</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>parseInt</td>
+              <td>String</td>
+              <td>Mengonversi String Ke Number <span>( bilangan bulat )</span></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>parseFloat</td>
+              <td>String</td>
+              <td>Mengonversi String Ke Number <span>( bilangan pecahan )</span></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Number</td>
+              <td>String</td>
+              <td>Mengonversi String Ke Number <span>( bilangan bulat / bilangan pecahan )</span></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>number.toString()</td>
+              <td>Number</td>
+              <td>Mengonversi Number Ke String</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>hasil : <span id="hasil"> </span></p>
+        </p>
+      </div>
+    </div>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+
+    <script> 
+      var bil1 = 11
+      var bil2 = 4
+      var jml = bil1.toString() + bil2.toString()
+      document.getElementById('hasil').innerHTML = jml
+    </script>
+  </section>
+
+  <section id="p6" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Tipe data Array</h5>
+        <p class="card-text">
+          berikut ini adalah contoh penggunaan Array <br>
+
+          <span id="biru">var nama=['Ricky', 'ika', 'Xena'];</span> <br><br>
+          Name_Variabel.push=('Isi_Array') : <span>Berfungsi untuk menambahkan data pada Array</span><br>
+
+          console.log ("Total Panjang Array saat ini " + nama.length) : <span>Untuk mengetahui panjang Array</span> <br>
+
+          console.log(nama[0]) : <span>Mengetahui Isi Array index ke Sekian</span> <br>
+
+          nama[0]='John' : <span>Edit data index Array ke-0 denagn nama john</span> <br>
+
+          delete nama[0] : <span>Menghapus Nilai Array</span>
+
+        </p>
+
+      </div>
+    </div>
+    <style>
+      #biru {
+        color: blue;
+      }
+    </style>
+    <script>
+      var nama = ['Ricky', 'ika', 'Xena'];
+      nama.push('angga Xena', 'kanita');
+      nama[0] = 'John'
+      delete nama[0];
+      console.info(nama[2])
+      console.log("Total Panjang Array saat ini " + nama.length)
+      console.table(nama);
+
+      console.log()
+      console.info('Array 2 Dimensi')
+      var data = [['Nama', 'alamat', 'No.Telp', 'Tanggal Lahir']]
+      data.push(['Ricky', 'prambon', 081276435511, '22/04/00'])
+      data.push(['Ika Sayang', 'mbak irang', 081276435511, '26/01/02'])
+      console.table(data)
+      console.info("info data", data[1])
+    </script>
+  </section>
+
+  <section id="p7" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Tipe Data Object</h5>
+        <p class="card-text">
+          Berikut adalah cara membuat tipe data Object <br>
+          <span id="biru">var object={}</span><br>
+          <span id="x">Halo</span>
+        </p>
+      </div>
+    </div>
+    <script>
+      console.log()
+      var object={}
+      console.info("Tipe data Object", object)
+      object["Ricky"] = ['Ricky' ,22, 'Nganjuk']
+      object["ika"] = 'Ika', 'Pare'
+      object["xena"] = 'Xena' ,0, 'pare'
+      console.table(object)
+      document.getElementById('x').innerHTML=object.Ricky
+    </script>
+  </section>
+
+  <section id="p9" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Popup</h5>
+        <p class="card-text" id="tutup">
+          Selamat Datang <span id="user"></span> Senang Atas Kunjangan Anda.
+        </p>
+      </div>
+    </div>
+    <script>
+      // alert("ini adalah alert")
+      
+      // var halaman = confirm('Apakah anda Ingin menampilkan Halaman')
+      // if(halaman){
+      //   var User = prompt('Masukan Nama Anda di Promt')
+      //   document.getElementById('user').innerHTML=User
+      // }else{
+      //   document.getElementById('tutup').innerHTML='Terimakasih Halaman Telah di tutup'
+      // }
+    </script>
+  </section>
+
+  <section id="p11" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Undifine, Null</h5>
+        <p class="card-text">
+          <span>Undifined</span> Adalah Data yang Nilainya Belum di Presentasikan <br>
+          <span>Null</span> Adalah presentasi Nilai kosong
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="p8" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Swich Case</h5>
+        <p class="card-text">Swich Case adalah sebuah percabangan layaknya If else, Namun bedanya Swich Case tersusun Seperti menu <br><br>
+
+        <input type="text" id="txt">
+        </p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="ta()">Button</button>
+        </div>
+        <p id="demo"></p>
+      </div>
+    </div>
+    <script>
+      function ta(){
+        var dataku = document.getElementById('txt').value;
+        switch(dataku){
+        case "a" : document.getElementById('demo').innerHTML='Menu 1'; break;
+        case "b" : document.getElementById('demo').innerHTML='Menu 2'; break;
+        case "c" : document.getElementById('demo').innerHTML='Menu 3'; break;
+        default : document.getElementById('demo').innerHTML='Menu default' 
+        }
+        console.log(dataku)
+      }
+    </script>
+  </section>
+
+  <section id="p8" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Terery operator</h5>
+        <p class="card-text">
+          Ternery Operator adalah kependekan dai if Statement, Cara penulisan sebagai berikut <br>
+          <img src="image/2022-07-31_21h12_42.png" alt=""> <br> <br>
+          <span id="X"></span>
+        </p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button">Button</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = 60;
+      var hasil = x >= 75? "Benar" : "Salah"
+      document.getElementById('X').innerHTML=hasil
+    </script>
+  </section>
+
+  <section id="p8" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Fungsi appendChild</h5>
+        <p class="card-text"> 
+          Daftar Jadwal
+          <ul id="jadwal"></ul>
+          <li></li>
+        
+        </p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="tambahdata()">Tambah data</button>
+          <button class="btn btn-primary" type="button" onclick="hapusdata()">Hapus data</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function tambahdata(){
+        var list = document.createElement('li')
+        var text = document.createTextNode('Ricky Agung Sumiranto')
+        list.appendChild(text)
+
+        document.getElementById('jadwal').appendChild(list)
+      }
+
+      function hapusdata(){
+        var hapus=document.getElementById('jadwal')
+        hapus.removeChild(hapus.firstChild)
+        //childNodes[2] = Menghapus berdasarkan urutan object
+        //firstChild = Menghapus dari start
+        //LastChild = menghapus dari belakang
+      }
+    </script>
+  </section>
+
+  <section id="p8" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">perulangan for</h5>
+        <p class="card-text">
+          
+          <div id="tabel"></div>
+        </p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="tambahh()">Button</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function tambahh(){
+        var tabel_div = document.getElementById('tabel')
+        var tabel = document.
+      }
+      
+    </script>
+  </section>
+  
+  <section id="p8" class="text-center">
+    <div class="card w-75 m-auto mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="button">Button</button>
+        </div>
+      </div>
+    </div>
+    <style></style>
+    <script></script>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

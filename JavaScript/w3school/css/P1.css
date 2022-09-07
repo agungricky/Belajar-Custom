@@ -1,0 +1,40 @@
+span {
+    color: white;
+    background-color: black;
+    padding: 3px;
+}
+
+body {
+    padding: 0px 30px;
+    width: 700px;
+    text-align: justify;
+}
+
+#satu {
+    background-color: greenyellow;
+    padding: 20px;
+    font-size: 19px;
+}
+
+#konten {
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    background-color: red;
+    width: 20%;
+    height: 30px;
+    margin-left: 270px;
+    box-shadow: black 5px 5px 5px;
+    color: white;
+}
+
+#dua {
+    margin-top: 20px;
+    background-color: aquamarine;
+    padding: 20px;
+    font-size: 19px;
+}
